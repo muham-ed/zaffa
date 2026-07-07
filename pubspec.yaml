@@ -1,0 +1,32 @@
+name: zaffa_app
+description: "A social audio chat application"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  http: ^1.2.0
+  
+  # ==== الميزات الإضافية الجديدة ====
+  lottie: ^3.1.0               # للهدايا المتحركة
+  easy_localization: ^3.0.8    # للترجمة الفورية
+  shared_preferences: ^2.5.5   # لحفظ بيانات المستخدم (مستوى و XP)
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  # تعريف مجلدات الأصول
+  assets:
+    - assets/translations/        # ملفات الترجمة
+    - assets/animations/          # ملفات Lottie (الهدايا)
